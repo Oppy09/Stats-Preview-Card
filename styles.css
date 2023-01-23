@@ -1,0 +1,43 @@
+/***************TAG SELEECTORS************/
+body{
+    background-color: hsl(233, 47%, 7%);
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/****************CLASS SELECTORS***********/
+.stats-card{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    height: 350px;
+    margin: 350px auto;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+/******************ID SELECTORS**************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************PSEUDO-CLASS SELECTORS**************/
