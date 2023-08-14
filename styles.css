@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lexend Deca';
+    background-color: hsl(233, 47%, 7%);
+}
+header {
+    color: hsl(0, 0%, 100%);
+}
+p {
+    line-height: 2;
+    color: hsla(0, 0%, 100%, 0.75);
+    /* margin: 2rem 0; */
+}
+div.container {
+    width: 70%;
+    display: flex;
+    margin: 10% auto;
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    border-radius: 10px;
+}
+header > h1 > span {
+    color: hsl(277, 64%, 61%);
+}
+div.content {
+    max-width: 50%;
+    max-height: 100%;
+}
+div.text-wrapper {
+    max-width: 80%;
+    margin: 2rem auto;
+}
+div.details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+div.illustration {
+    max-width: 50%;
+}
+.stats {
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+}
+.stats span {
+    display: block;
+    font-family: 'Inter', sans-serif;
+}
+.stats span:nth-child(1) {
+    font-size: 1.2rem;
+}
+.stats span:nth-child(2) {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+div.company-stats {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+div.template-stats {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    font-weight: 700;
+}
+div.query-stats {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    font-weight: 700;
+}
+figure {
+    position: relative;
+}
+figure::after {
+    display: block;
+    content: '';
+    background-color: hsl(277, 64%, 40%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.attribution {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/*************MEDIA QUERY*************/
+
+@media screen and (max-width: 500px) {
+    main {
+        padding: 4rem 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;;
+    }
+    div.container {
+        width: 100%;
+        flex-direction: column-reverse;
+        min-height: 90%;
+        margin: 0;
+    }
+    div.illustration {
+        max-width: 100%;
+    }
+    div.content {
+        max-height: calc(100% - 10px);
+        max-width: 100%;
+    }
+    div.text-wrapper {
+        text-align: center;
+        max-width: 90%;
+    }
+    .stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
